@@ -19,16 +19,16 @@ def generate_python():
 def generate_csharp():
     with(open('main.cs','w') as f):
         f.write('using System;\n')
-        f.write('using System.Collections.Generic;')
+        f.write('using System.Collections.Generic;\n')
         f.write('\n')
         f.write('namespace Application\n')
         f.write('{\n')
         f.write('  public static class Program\n')
         f.write('  {\n')
-        f.write('    public static int Main(string[] args)')
+        f.write('    public static int Main(string[] args)\n')
         f.write('    {\n')
         f.write('      Console.WriteLine("Hello, friend!");\n')
-        f.write('      return 0;')
+        f.write('      return 0;\n')
         f.write('    }\n')
         f.write('  }\n')
         f.write('}\n')
@@ -39,8 +39,8 @@ def generate_cpp():
         f.write('\n')
         f.write('int main(int argc, char** argv)\n')
         f.write('{\n')
-        f.write('  std::cout << "Hello, friend!" << std::endl;')
-        f.write('  return 0;')
+        f.write('  std::cout << "Hello, friend!" << std::endl;\n')
+        f.write('  return 0;\n')
         f.write('}\n')
 
 
